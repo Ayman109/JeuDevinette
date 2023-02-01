@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player1"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:padding="9dp"
+            android:textColor="@color/white"
+            android:background="@drawable/player_turn_form"
+            />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/player_turn_form"
+            android:text="Player2"
+            android:padding="9dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/devine"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saisie"
+        android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+        android:textSize="24sp"
+        android:textColor="?android:textColorPrimary"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:autofillHints=""
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/nombre"
+        />
+    <Button
+        android:id="@+id/btnComparer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/bu"
+        android:textColor="?android:textColorPrimary"
+        app:backgroundTint="?colorOnPrimary"
+        android:onClick="calculer"/>
+    <TextView
+        android:id="@+id/txtResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp" />
+</LinearLayout>
